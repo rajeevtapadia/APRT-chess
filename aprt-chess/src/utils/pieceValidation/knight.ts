@@ -6,7 +6,6 @@ export function validateKnightMove(
   fromY: number,
   toX: number,
   toY: number,
-  pieceColor: PieceColor
 ): boolean {
   const slope = Math.abs(calcSlope(fromX, fromY, toX, toY));
   const distance = Math.floor(calcDist(fromX, fromY, toX, toY));

@@ -8,7 +8,6 @@ export function validateRookMove(
   toX: number,
   toY: number,
   boardState: string[][],
-  pieceColor: PieceColor
 ): boolean {
   if (
     verticalPathCheck(fromX, fromY, toX, toY, boardState) ||

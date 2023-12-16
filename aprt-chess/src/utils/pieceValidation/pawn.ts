@@ -9,7 +9,6 @@ export function validatePawnMove(
   toX: number,
   toY: number,
   boardState: string[][],
-  pieceColor: PieceColor
 ): boolean {
   // if its the pawns first move
   if (fromY === 6) {

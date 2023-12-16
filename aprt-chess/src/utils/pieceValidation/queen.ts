@@ -10,7 +10,6 @@ export function validateQueenMove(
   toX: number,
   toY: number,
   boardState: string[][],
-  pieceColor: PieceColor
 ): boolean {
   const verticalCheck = verticalPathCheck(fromX, fromY, toX, toY, boardState);
   const horizontalCheck = horizontalPathCheck(fromX, fromY, toX, toY, boardState);

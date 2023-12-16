@@ -28,30 +28,30 @@ export function validate(
 
   switch (pieceName) {
     case "wP":
-      return validatePawnMove(fromX, fromY, toX, toY, boardState, "w");
+      return validatePawnMove(fromX, fromY, toX, toY, boardState);
     case "wK":
-      return validateKingMove(fromX, fromY, toX, toY, "w");
+      return validateKingMove(fromX, fromY, toX, toY);
     case "wQ":
-      return validateQueenMove(fromX, fromY, toX, toY, boardState, "w");
+      return validateQueenMove(fromX, fromY, toX, toY, boardState);
     case "wN":
-      return validateKnightMove(fromX, fromY, toX, toY, "w");
+      return validateKnightMove(fromX, fromY, toX, toY);
     case "wR":
-      return validateRookMove(fromX, fromY, toX, toY, boardState, "w");
+      return validateRookMove(fromX, fromY, toX, toY, boardState);
     case "wB":
-      return validateBishopMove(fromX, fromY, toX, toY, boardState, "w");
+      return validateBishopMove(fromX, fromY, toX, toY, boardState);
     case "bP":
       console.log("its a black pawn");
       break;
     case "bK":
-      return validateKingMove(fromX, fromY, toX, toY, "b");
+      return validateKingMove(fromX, fromY, toX, toY);
     case "bQ":
-      return validateQueenMove(fromX, fromY, toX, toY, boardState, "b");
+      return validateQueenMove(fromX, fromY, toX, toY, boardState);
     case "bN":
-      return validateKnightMove(fromX, fromY, toX, toY, "b");
+      return validateKnightMove(fromX, fromY, toX, toY);
     case "bR":
-      return validateRookMove(fromX, fromY, toX, toY, boardState, "b");
+      return validateRookMove(fromX, fromY, toX, toY, boardState);
     case "bB":
-      return validateBishopMove(fromX, fromY, toX, toY, boardState, "b");
+      return validateBishopMove(fromX, fromY, toX, toY, boardState);
 
     default:
       break;

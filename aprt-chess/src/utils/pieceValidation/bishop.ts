@@ -8,7 +8,6 @@ export function validateBishopMove(
   toX: number,
   toY: number,
   boardState: string[][],
-  pieceColor: PieceColor
 ): boolean {
   const rightDiaCheck = rightDiagonalCheck(fromX, fromY, toX, toY, boardState);
   const leftDiaCheck = leftDiagonalCheck(fromX, fromY, toX, toY, boardState);

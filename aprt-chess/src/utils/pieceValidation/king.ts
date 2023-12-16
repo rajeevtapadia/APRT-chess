@@ -1,7 +1,7 @@
 import { PieceColor } from "../validate";
 import { calcDist } from "../mathFunctions";
 
-// king move is valid iff Math.floor(dist(to, from)) === 1
+// `k`ing move is valid iff Math.floor(dist(to, from)) === 1
 // kill move not yet implemented
 
 export function validateKingMove(
@@ -9,7 +9,6 @@ export function validateKingMove(
   fromY: number,
   toX: number,
   toY: number,
-  pieceColor: PieceColor
 ): boolean {
   const distance = Math.floor(calcDist(fromX, fromY, toX, toY));
   console.log(distance);
